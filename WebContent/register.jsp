@@ -8,7 +8,7 @@
 <title>Registration</title>
 </head>
 <body>
-<form action="Register" method="post">
+<form action="Register" method="get">
 		<table>
 			<tr>
 				<td>Name</td>

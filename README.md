@@ -13,4 +13,25 @@ jar file required
 
 This app required java jdk 15.0.1
 
+Database management.
+
+1. use mysql version 8.0.22
+2. database connection detail shaiful.DbConnection.java
+3. need to create database name "studentdb" with a "student" table
+	SQL query for creating the db
+	
+	CREATE DATABASE `studentdb;
+	CREATE TABLE `student` (
+ 	`icno` double NOT NULL,
+  	`sname` varchar(45) DEFAULT NULL,
+  	`birthday` varchar(45) DEFAULT NULL,
+  	`pname` varchar(45) DEFAULT NULL,
+  	`phone` varchar(45) DEFAULT NULL,
+  	`address` varchar(45) DEFAULT NULL,
+  	PRIMARY KEY (`icno`)
+	) 	ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+	
+	
+
+
 created by Shaiful
