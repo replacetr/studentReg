@@ -28,8 +28,7 @@ Database management.
   	`pname` varchar(45) DEFAULT NULL,
   	`phone` varchar(45) DEFAULT NULL,
   	`address` varchar(45) DEFAULT NULL,
-  	PRIMARY KEY (`icno`)
-	) 	ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  	PRIMARY KEY (`icno`);
 	
 	
 
