@@ -30,7 +30,5 @@ Database management.
   	`address` varchar(45) DEFAULT NULL,
   	PRIMARY KEY (`icno`);
 	
-	
 
-
-created by Shaiful az
+created by Shaiful 
