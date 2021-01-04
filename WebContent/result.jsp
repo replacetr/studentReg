@@ -25,12 +25,14 @@
 		</tr>
 
 		<%
-		/* ArrayList<Student> std = (ArrayList<Student>) request.getAttribute("data"); */
-		ArrayList<Student> std = new ArrayList<Student>();
-		std = (ArrayList<Student>)request.getAttribute("data");
+		ArrayList<Student> std = (ArrayList<Student>) request.getAttribute("data"); 
+	/* 	ArrayList<Student> std = new ArrayList<Student>();
+	
+		std = (ArrayList<Student>);
+		*/
 		
-		
-		
+		System.out.println(std);
+		 
 		for (Student s : std) {
 		%>
 		<tr>

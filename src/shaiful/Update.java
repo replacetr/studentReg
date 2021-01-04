@@ -33,13 +33,13 @@ public class Update extends HttpServlet {
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
 
-		double icno = Double.parseDouble(request.getParameter("icno"));
-		SelectData selected = new SelectData();
-		ArrayList<Student> data = new ArrayList<Student>();
-		data = selected.select(icno);
-		request.setAttribute("data", data);
-		RequestDispatcher view = request.getRequestDispatcher("/result.jsp");
-		view.include(request, response);
+//		double icno = Double.parseDouble(request.getParameter("icno"));
+//		SelectData selected = new SelectData();
+//		ArrayList<Student> data = new ArrayList<Student>();
+//		data = selected.select(icno);
+//		request.setAttribute("data", data);
+//		RequestDispatcher view = request.getRequestDispatcher("/result.jsp");
+//		view.include(request, response);
 	}
 
 	/**

@@ -30,7 +30,7 @@
   else { %>
 <%--        <p>result: <%  out.println(request.getAttribute("data")); %></p> --%>
 
-		<p> ${result} data(s) created. </p>
+		<p> ${result} record created. </p>
 
 		
 
@@ -41,6 +41,10 @@
 	  %><p> <% out.println(request.getAttribute("deletedrows")); %>record deleted.</p><%
   }
   
+  if (request.getAttribute("update") != null)
+  {
+	  %><p> <% out.println(request.getAttribute("update")); %>record updated.</p><%
+  }
       
       %>
 </body>

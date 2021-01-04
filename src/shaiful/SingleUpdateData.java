@@ -38,7 +38,7 @@ public class SingleUpdateData extends HttpServlet {
 		
 		
 		UpdataData newData = new UpdataData();
-		Boolean update=newData.updating(sname, icno, birthday, pname, phone, address);
+		int update=newData.updating(sname, icno, birthday, pname, phone, address);
 		request.setAttribute("update", update);
 		RequestDispatcher view = request.getRequestDispatcher("/index.jsp");      
         view.include(request, response);

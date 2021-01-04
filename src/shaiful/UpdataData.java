@@ -6,11 +6,11 @@ import java.sql.SQLException;
 
 public class UpdataData {
 
-	public Boolean updating(String sname, String icno, String birthday, String pname, String phone, String address) {
+	public int updating(String sname, String icno, String birthday, String pname, String phone, String address) {
 
 		DbConnection dbcon = new DbConnection();
 		Connection con = dbcon.getConnection();
-		boolean result = false;
+		int result;
 		String sql = "update student set sname = ? , birthday = ? , pname = ? , "
 				+ "phone = ? , address =? where icno = ?";
 		try {
@@ -24,13 +24,13 @@ public class UpdataData {
 			ps.setString(5, address);
 			ps.setDouble(6, Double.parseDouble(icno));
 
-			ps.executeUpdate();
+			result = ps.executeUpdate();
 
-			result = true;
+			
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-			result = false;
+			result = 0;
 		}
 		return result;
 

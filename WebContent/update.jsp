@@ -25,7 +25,7 @@
 		
 		if (std.isEmpty() == true){
 			
-			out.println("<h2>NO DATA FOUND<h2>");
+			out.println("<p>No IC number match<p>");
 		}
 
 		else{
